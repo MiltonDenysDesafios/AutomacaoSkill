@@ -2,6 +2,7 @@ package steps;
 
 import bean.AutomacaoSkillBean;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
 import pages.AutomacaoSkillPage;
 
 public class AutomacaoSkillSteps {
@@ -15,7 +16,14 @@ public class AutomacaoSkillSteps {
         automacaoSkillBean.setEstado(estado);
         automacaoSkillBean.setCidade(cidade);
         AutomacaoSkillPage.preencherCampos(automacaoSkillBean);
-
+    }
+    @When("clico no botao EU QUERO")
+    public void clicoBotaoEuQuero() {
+        AutomacaoSkillPage.clicoBotaoEuQuero();
+    }
+    @When("aluno deve ser cadastrado com sucesso")
+    public void alunoCadastradoSucesso() {
+        //site descontinuado impossivel de validar cadastro
     }
 
 }
