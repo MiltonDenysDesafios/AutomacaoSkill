@@ -12,11 +12,10 @@ public class AutomacaoSkillBean {
     public AutomacaoSkillBean() {
     }
 
-    public AutomacaoSkillBean(String nome, String email, String telefone, String endereco, String estado, String cidade) {
+    public AutomacaoSkillBean(String nome, String email, String telefone, String estado, String cidade) {
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
-        this.endereco = endereco;
         this.estado = estado;
         this.cidade = cidade;
     }
@@ -45,13 +44,6 @@ public class AutomacaoSkillBean {
         this.telefone = telefone;
     }
 
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
 
     public String getEstado() {
         return estado;
